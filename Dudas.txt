@@ -1,0 +1,6 @@
+miduBootcamp part1:
+
+App.js -> dentro del componente App hago una llamada a un componente que en su momento existio, pero al que luego le cambie el nombre
+	  por que sigue funcionando? no se supone que ya no existe?
+
+       -> lo mismo pasa con "MensajeProp"
