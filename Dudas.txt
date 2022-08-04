@@ -4,3 +4,14 @@ App.js -> dentro del componente App hago una llamada a un componente que en su m
 	  por que sigue funcionando? no se supone que ya no existe?
 
        -> lo mismo pasa con "MensajeProp"
+
+- Hasta ahora, todo el codigo nuevo han sido unos componentes que se han generado o bien dentro del App.js, o bien en otros archivos .js. 
+  TODOS ESTOS COMPONENTES HAN SIDO LLAMADOS EN "App.js". SIN EMBARGO, EN EL EJERCICIO LO QUE SE MODIFICA ES EL ARCHIVO "index.js" ¿XQ?
+
+- en el bootcamp dice que borre varios archivos en el directorio "course". No afecta a la aplicacion?
+
+- por que se crea una app de react dentro de otra?
+
+- por ahora, las forma resumida de declarar componentes funciona ¿EN QUE CASOS NO LO HARIA?
+
+- la forma normal (no resumida), la cual usa "props.xxxxx" tiene alguna ventaja?
