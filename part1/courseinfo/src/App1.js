@@ -1,4 +1,3 @@
-
 // DEFINICION DE COMPONENTE TITLE NORMAL, SIN RESUMIR
 /*
 const Title = (props) => {
@@ -14,9 +13,9 @@ const Title = ({course}) => {
 */
 
 // DEFINICION DE COMPONENTE TITLE TOTALMENTE RESUMIDA, EN UNA SOLA LINEA
-/*
+
 const Title = ({course}) => <h1>{course}</h1>                // SOLO FUNCIONA PARA COSAS SIMPLES, YA QUE SOLO EVALUA LO PRIMERO
-*/
+
 
 // DEFINICION DE COMPONENTE CONTENT NORMAL, SIN RESUMIR
 /*
@@ -41,20 +40,20 @@ const Content = ({part, exercise}) => {
 */
 
 // DEFINICION DE COMPONENTE CONTENT TOTALMENTE RESUMIDA, EN UNA SOLA LINEA
-/*
+
 const Content = ({part, exercise}) => <div><p>{part}{" "}{exercise}</p></div>     // EN ESTE CASO FUNCIONA ¿CUANDO NO LO HARIA?
-*/
+
 
 // COMPONENTE App1
-/*
+
 const App1 = () => {
   const course = 'Half Stack application development'
   const part1 = 'Fundamentals of React'
   const exercises1 = 10
   const part2 = 'Using props to pass data'
-  const exercises2 = 7
+  const exercises2 = 1
   const part3 = 'State of a component'
-  const exercises3 = 14
+  const exercises3 = 11
 
   return (
     <div>
@@ -68,8 +67,5 @@ const App1 = () => {
     </div>
   )
 }
-*/
 
-// ReactDOM.render(<App1 />, document.getElementById('root'))
-
-// export default App1;
+export default App1     // DEBERIA PONER ";"?
