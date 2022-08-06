@@ -184,13 +184,13 @@ ReactDOM.render(<App3 />, document.getElementById('root'))
 
 
 // COMPONENTE App4 (USANDO 1 OBJETO, DENTRO DEL CUAL HAY UN ARRAY)
-
+/*
 const Title = ({course}) => <h1>{course.name}</h1>
 
 const Content = ({parts}) => {  
   return (
     <div>
-      {parts.map((part) => <p>{part.name}{" "}{part.exercises}</p>)} {/** NO ENTIENDO ESTA SINTAXIS. ¿ES LA FORMA RESUMIDA Y HAY UN RETURN IMPLICITO EN LA FLECHA =>? */}
+      {parts.map((part) => <p>{part.name}{" "}{part.exercises}</p>)} {/** NO ENTIENDO ESTA SINTAXIS. ¿ES LA FORMA RESUMIDA Y HAY UN RETURN IMPLICITO EN LA FLECHA =>? }
     </div>
   )
 }
@@ -233,3 +233,4 @@ const App4 = () => {
 }
 
 ReactDOM.render(<App4 />, document.getElementById('root'))
+*/

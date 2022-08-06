@@ -72,6 +72,4 @@ const App1 = () => {
 
 // ReactDOM.render(<App1 />, document.getElementById('root'))
 
-
-
-export default App1;
+// export default App1;
