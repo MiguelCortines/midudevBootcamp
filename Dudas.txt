@@ -5,13 +5,59 @@ App.js -> dentro del componente App hago una llamada a un componente que en su m
 
        -> lo mismo pasa con "MensajeProp"
 
-- Hasta ahora, todo el codigo nuevo han sido unos componentes que se han generado o bien dentro del App.js, o bien en otros archivos .js. 
-  TODOS ESTOS COMPONENTES HAN SIDO LLAMADOS EN "App.js". SIN EMBARGO, EN EL EJERCICIO LO QUE SE MODIFICA ES EL ARCHIVO "index.js" ¿XQ?
-
-- en el bootcamp dice que borre varios archivos en el directorio "course". No afecta a la aplicacion?
-
-- por que se crea una app de react dentro de otra?
 
 - por ahora, las forma resumida de declarar componentes funciona ¿EN QUE CASOS NO LO HARIA?
 
 - la forma normal (no resumida), la cual usa "props.xxxxx" tiene alguna ventaja?
+
+- es importante el ; en las importaciones y exportaciones o no es necesario?
+
+- no entiendo la sintaxis de los componentes "Content" y "Total" en "App3"
+
+- no me sale "App4"
+
+- Que es un Hook?
+
+- que es "prevContador"? parece como si no lo declarara (video3 min 44:50, dentro del componente "handleClick")
+
+- que diferencia hay entre declarar un estado como objeto o como array? tiene alguna ventaja uno sobre otro? (video3 1:04:32)
+	Mas adelante (video3 1:31:30) quita el estado objeto y lo hace todo con el de array
+
+
+
+
+
+
+
+NO USAR HERRAMIENTAS QUE ACTUALICEN EL ESTADO O VUELVAN A RENDERIZAR, COMO "setInterval" DENTRO DEL CUERPO DE UN COMPONENTE (video3 min 19:35)
+	- En cualquier caso, esto solo era un ejemplo y parece que no se hace de esta forma, asi que no se usara "setInterval"
+
+CUIDADO CON LLAMAR A FUNCIONES AL USAR HERRAMIENTAS COMO "onClick", YA QUE SE PUEDEN GENERAR BUCLES INFINITOS (video3 min 29:00)
+
+INFORMARME SOBRE EL RENDERIZADO CONDICIONAL (TERNARIAS), parece acortar el codigo (video3 min 33:40)
+
+NUNCA PONER UN HOOK ENTRE CONDICIONALES (video3 min 35:35)
+
+INTENTAR HACER EL EJERCICIO PROPUESTO POR MIDU (video3 min 37:05)
+
+ACTUALIZACION DEL ESTADO DE OTRA MANERA, puede ser conveniente en algunos casos (video3 min 39:47)
+
+UN COMPONENTE SE EJECUTA SIEMPRE QUE SE ACTUALICE SU ESTADO INTERNO O LE LLEGUEN NUEVAS PROPS. Pasarle un mismo valor varias veces se considera 
+nueva prop, aunque el valor no cambie, por lo que el componente se ejecuta de nuevo (video3 min 44:35, se rerenderiza pese a pasar reiteradamente
+el valor 2 como prop)
+
+SIN EMBARGO, EN EL BOTON "Reset" NO SE RERENDERIZA, ya que no es una prop, sino que se aplica directamente al estado
+
+MIDU RECOMIENDA SEPARAR LOS ESTADOS. De todos modos, aqui enseña como fusionar dos estados (video3 min 53:30)
+
+LAS PROPS Y LOS ESTADOS SON INMUTABLES. NO ACTUALIZAR UN ESTADO DIRECTAMENTE CON JAVASCRIPT, YA QUE REACT PIERDE EL RASTRO DEL VALOR DEL ESTADO. 
+Se debe hacer asignando con otra notacion (video3 1:03:15)
+
+
+
+
+
+
+
+
+

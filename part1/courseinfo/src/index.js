@@ -9,6 +9,8 @@ import App3 from './App3'     // DEBERIA PONER ";"?
 // import App4 from './App4'     // DEBERIA PONER ";"?
 
 
+// RENDERIZADO DE LAS Apps
+
 // ReactDOM.render(<App1 />, document.getElementById('root'))
 
 // ReactDOM.render(<App2 />, document.getElementById('root'))

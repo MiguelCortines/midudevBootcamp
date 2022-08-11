@@ -11,7 +11,7 @@ const Content = ({parts}) => {
 }
 
 const Total = ({parts}) => {
-  const suma = parts.map(part => part.exercises).reduce((prev, curr) => prev + curr, 0)  // LA SINTAXIS AQUI ES DIFERENTE A CONTENT. NO SE PONERLO DENTRO DEL RETURN, DE HECHO ¿OTRO RETURN IMPLICITO?
+  const suma = parts.map(part => part.exercises).reduce((prev, curr) => prev + curr, 0)  // LA SINTAXIS AQUI ES DIFERENTE A CONTENT. NO SE PONERLO DENTRO DEL RETURN ¿OTRO RETURN IMPLICITO?
   return (
     <div>
       <p>Number of exercises {suma}</p>
