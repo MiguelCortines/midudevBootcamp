@@ -23,6 +23,12 @@ App.js -> dentro del componente App hago una llamada a un componente que en su m
 - que diferencia hay entre declarar un estado como objeto o como array? tiene alguna ventaja uno sobre otro? (video3 1:04:32)
 	Mas adelante (video3 1:31:30) quita el estado objeto y lo hace todo con el de array
 
+- en unicafe he declarado varios "handleClick" dentro del componente "App" para modelar el estado. ¿que son? ¿funciones? ¿componentes?
+   	los he intentado sacar fuera del componente pero no me deja por ser un hook
+
+
+
+
 
 
 
