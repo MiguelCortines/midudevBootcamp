@@ -26,6 +26,9 @@ App.js -> dentro del componente App hago una llamada a un componente que en su m
 - en unicafe he declarado varios "handleClick" dentro del componente "App" para modelar el estado. ¿que son? ¿funciones? ¿componentes?
    	los he intentado sacar fuera del componente pero no me deja por ser un hook
 
+- en unicafe App3, los campos "average" y "positive" aparecen por defecto como NaN. Me gustaria poder darles un valor inicial u ocultar los 
+	parrafos hasta que tengan un valor
+
 
 
 

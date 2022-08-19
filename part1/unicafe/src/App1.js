@@ -1,3 +1,5 @@
+// Usando un solo estado complejo con varios atributos
+
 import React, { useState } from 'react'
 
 const App1 = () => {
