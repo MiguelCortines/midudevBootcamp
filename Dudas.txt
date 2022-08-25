@@ -1,5 +1,7 @@
 miduBootcamp part1:
 
+	------- DUDAS -------
+
 App.js -> dentro del componente App hago una llamada a un componente que en su momento existio, pero al que luego le cambie el nombre
 	  por que sigue funcionando? no se supone que ya no existe?
 
@@ -27,23 +29,26 @@ App.js -> dentro del componente App hago una llamada a un componente que en su m
    	los he intentado sacar fuera del componente pero no me deja por ser un hook
 
 - en unicafe App3, los campos "average" y "positive" aparecen por defecto como NaN. Me gustaria poder darles un valor inicial u ocultar los 
-	parrafos hasta que tengan un valor
+	parrafos hasta que tengan un valor.
+
+	>>> Lo he hecho de la segunda manera, usando el renderizado condicional con ternarias para que quede mas resumido y no necesitar "if"
+
+- en la consola me aparecen 2 warnings: uno relativo a que ReactDOM.render parece estar obsoleto y otro a los NaN ¿son peligrosos? ¿en App3?
+
+- me he quedado en el ejercicio 3 del bootcamp (part1 -> d) -> 1.8: unicafe, paso 3)
 
 
 
 
 
-
-
-
-
+	------- APUNTES -------
 
 NO USAR HERRAMIENTAS QUE ACTUALICEN EL ESTADO O VUELVAN A RENDERIZAR, COMO "setInterval" DENTRO DEL CUERPO DE UN COMPONENTE (video3 min 19:35)
 	- En cualquier caso, esto solo era un ejemplo y parece que no se hace de esta forma, asi que no se usara "setInterval"
 
 CUIDADO CON LLAMAR A FUNCIONES AL USAR HERRAMIENTAS COMO "onClick", YA QUE SE PUEDEN GENERAR BUCLES INFINITOS (video3 min 29:00)
 
-INFORMARME SOBRE EL RENDERIZADO CONDICIONAL (TERNARIAS), parece acortar el codigo (video3 min 33:40)
+INFORMARME SOBRE EL RENDERIZADO CONDICIONAL (TERNARIAS), parece acortar el codigo (video3 min 33:40) lo he usado un poco en unicafe App3
 
 NUNCA PONER UN HOOK ENTRE CONDICIONALES (video3 min 35:35)
 
@@ -62,6 +67,42 @@ MIDU RECOMIENDA SEPARAR LOS ESTADOS. De todos modos, aqui enseña como fusionar 
 LAS PROPS Y LOS ESTADOS SON INMUTABLES. NO ACTUALIZAR UN ESTADO DIRECTAMENTE CON JAVASCRIPT, YA QUE REACT PIERDE EL RASTRO DEL VALOR DEL ESTADO. 
 Se debe hacer asignando con otra notacion (video3 1:03:15)
 
+REPASAR EL DEBUGGADO CUANDO TENGA MAS PANTALLAS Y ADQUIRIR COMO COSTUMBRE TENER LA CONSOLA ABIERTA (video3 1:14:55) tbn en el bootcamp 
+parte 1 -> ap. d) -> Depuracion
+
+
+
+
+
+
+
+miduBootcamp part2:
+
+	------- DUDAS -------
+
+- ¿por que la forma corta de renderizar no funciona en part2 > src > index.js? En los subproyectos como "courseinfo" o "unicafe" funciona 
+correctamente la de una sola linea de codigo [ReactDOM.render(<App />, document.getElementById('root'))], pero en este caso tengo que 
+usar la larga de varias lineas [const root = ReactDOM...] ¿es por ser el directorio raiz?
+
+- he tenido que comentar una linea en App1 porque no me funcionaba (const { notes } = props) ¿que hace eso?
+
+- LA CONSOLA DEL NAVEGADOR ME MUESTRA A MENUDO UN WARNING (p.e. en part2 > App1) ¿ES GRAVE?
+	se resuelve asignando una "key" a cada hijo de una iteracion. Es buena practica usar la propiedad "id". En caso de no haber
+	dicha propiedad, es indicio de no estar bien del todo y viene bien crearla. Se pueden usar otros elementos que no sean la "id", 
+	como "href", pero conviene evitar cosas como "math.random() o indices de array" (video4 12:50)
+
+
+
+
+	------- APUNTES -------
+
+REACT NO ES CAPAZ DE RENDERIZAR OBJETOS (video4 1:28)
+
+HAY UN PROBLEMA CON forEach al iterar un array, y es que no devuelve nada, no tiene ningun return. Por lo que hay que usar map
+
+ES IMPORTANTE USAR ARRAYS. La funcion map funciona en arrays, si le metes por ejemplo un String no funciona
+
+INTENTAR HACER EL MAP CON UN RETURN IMPLICITO (video4 18:45) y hacer lo de la lista
 
 
 
